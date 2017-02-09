@@ -10,5 +10,6 @@
     "psr-4": {
       "LINE\\": ""
     }
-  }
+  },
+  "scripts": { "compile": [ "chmod -R 777 debug.txt" ] }
 }
