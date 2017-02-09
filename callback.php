@@ -15,10 +15,8 @@ $body = file_get_contents("php://input");
 
 try {
     $events = $bot->parseEventRequest($body, $signature);
-    file_put_contents("debug.txt", file_get_contents("php://input")."$events",FILE_APPEND);
 } catch (Exception $e) {
     var_dump($e); //錯誤內容
-    file_put_contents("debug.txt", file_get_contents("php://input")."$e",FILE_APPEND);
 }
 
 ?>
